@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ssatz/exotel-sms.svg?branch=master)](https://travis-ci.org/ssatz/exotel-sms)
+
 This is a Laravel 5 Package for Exotel SMS Gateway Integration. 
 This package supports Laravel 5.5 or Higher
 
