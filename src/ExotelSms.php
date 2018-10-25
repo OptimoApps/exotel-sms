@@ -1,4 +1,4 @@
-<?php namespace Satz\ExotelSms;
+<?php namespace Ssatz\ExotelSms;
 /**
  * *
  *  *  * Copyright (C) Optimo Technologies- All Rights Reserved
@@ -10,7 +10,7 @@
  */
 
 use GuzzleHttp\Client;
-use Satz\ExotelSms\Exception\ConfigNotDefinedException;
+use Ssatz\ExotelSms\Exception\ConfigNotDefinedException;
 
 /**
  * Class ExotelSms

@@ -1,4 +1,4 @@
-<?php
+<?php namespace Ssatz\ExotelSms;
 /**
  * *
  *  *  * Copyright (C) Optimo Technologies - All Rights Reserved
@@ -8,7 +8,6 @@
  *  *
  *
  */
-namespace Satz\ExotelSms;
 use Illuminate\Support\Facades\Facade;
 
 class ExotelSmsFacade extends Facade

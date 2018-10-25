@@ -1,4 +1,4 @@
-<?php namespace Satz\ExotelSms\Test;
+<?php namespace Ssatz\ExotelSms\Test;
 /**
  * *
  *  *  * Copyright (C) Optimo Technologies - All Rights Reserved
@@ -9,8 +9,8 @@
  *
  */
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Satz\ExotelSms\ExotelSmsFacade;
-use Satz\ExotelSms\ExotelSmsServiceProvider;
+use Ssatz\ExotelSms\ExotelSmsFacade;
+use Ssatz\ExotelSms\ExotelSmsServiceProvider;
 
 
 /**

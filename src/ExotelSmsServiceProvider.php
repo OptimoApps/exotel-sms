@@ -1,4 +1,4 @@
-<?php namespace Satz\ExotelSms;
+<?php namespace Ssatz\ExotelSms;
 /**
  * *
  *  *  * Copyright (C) Optimo Technologies - All Rights Reserved
