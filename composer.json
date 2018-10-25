@@ -1,13 +1,20 @@
 {
     "name": "satz/exotel-sms",
     "description": "Exotel SMS Laravel Package",
+    "keywords": [
+        "sms api",
+        "laravel package sms",
+        "exotel sms"
+    ],
     "type": "library",
     "license": "MIT",
+    "homepage": "https://github.com/ssatz/exotel-sms",
     "authors": [
         {
             "name": "satz",
             "email": "sathish.thi@gmail.com",
-            "homepage": "https://www.optimoapps.com/"
+            "homepage": "https://www.optimoapps.com/",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "stable",
@@ -30,6 +37,9 @@
         "psr-4": {
             "Satz\\ExotelSms\\Test\\": "tests/"
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
     },
     "extra": {
         "laravel": {
