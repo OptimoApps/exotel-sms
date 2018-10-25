@@ -1,5 +1,5 @@
 {
-    "name": "satz/exotel-sms",
+    "name": "ssatz/exotel-sms",
     "description": "Exotel SMS Laravel Package",
     "keywords": [
         "sms api",
@@ -17,7 +17,6 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
         "php": ">=7.1",
         "illuminate/support": ">=5.5",
@@ -30,24 +29,27 @@
     },
     "autoload": {
         "psr-4": {
-            "Satz\\ExotelSms\\": "src/"
+            "Ssatz\\ExotelSms\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Satz\\ExotelSms\\Test\\": "tests/"
+            "Ssatz\\ExotelSms\\Test\\": "tests/"
         }
     },
     "scripts": {
         "test": "vendor/bin/phpunit"
     },
+    "config": {
+        "sort-packages": true
+    },
     "extra": {
         "laravel": {
             "providers": [
-                "Satz\\ExotelSms\\ExotelSmsServiceProvider"
+                "Ssatz\\ExotelSms\\ExotelSmsServiceProvider"
             ],
             "aliases": {
-                "ExotelSms": "Satz\\Exotel\\ExotelSmsFacade"
+                "ExotelSms": "Ssatz\\Exotel\\ExotelSmsFacade"
             }
         }
     }
