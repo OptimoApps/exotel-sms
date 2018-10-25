@@ -49,7 +49,7 @@
                 "Ssatz\\ExotelSms\\ExotelSmsServiceProvider"
             ],
             "aliases": {
-                "ExotelSms": "Ssatz\\Exotel\\ExotelSmsFacade"
+                "ExotelSms": "Ssatz\\ExotelSms\\ExotelSmsFacade"
             }
         }
     }
