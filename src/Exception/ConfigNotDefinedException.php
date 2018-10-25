@@ -1,5 +1,8 @@
-<?php namespace Satz\ExotelSms\Exception;
-/**
+<?php
+
+namespace Satz\ExotelSms\Exception;
+
+/*
  * *
  *  *  * Copyright (C) Optimo Technologies- All Rights Reserved
  *  *  * Unauthorized copying of this file, via any medium is strictly prohibited
