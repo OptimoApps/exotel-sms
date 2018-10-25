@@ -1,5 +1,8 @@
-<?php namespace Ssatz\ExotelSms;
-/**
+<?php
+
+namespace Ssatz\ExotelSms;
+
+/*
  * *
  *  *  * Copyright (C) Optimo Technologies- All Rights Reserved
  *  *  * Unauthorized copying of this file, via any medium is strictly prohibited
@@ -13,8 +16,7 @@ use GuzzleHttp\Client;
 use Ssatz\ExotelSms\Exception\ConfigNotDefinedException;
 
 /**
- * Class ExotelSms
- * @package Satz\ExotelSms
+ * Class ExotelSms.
  */
 class ExotelSms
 {
@@ -35,7 +37,6 @@ class ExotelSms
      */
     protected $senderId;
 
-
     /**
      * @param int $toMobile
      * @param string $message
@@ -54,12 +55,12 @@ class ExotelSms
         $this->sid = config('exotel-sms.SID');
         $this->token = config('exotel-sms.Token');
         $this->senderId = config('exotel-sms.SenderId');
-        if (!isset($this->sid) || !isset($this->token) || !isset($this->senderId)) {
+        if (! isset($this->sid) || ! isset($this->token) || ! isset($this->senderId)) {
             throw new ConfigNotDefinedException('Exotel Sms Config not defined');
         }
-        return 'https://' . $this->sid . ':' . $this->token . '@api.exotel.com/v1/Accounts/' . $this->token . '/Sms/send.json';
-    }
 
+        return 'https://'.$this->sid.':'.$this->token.'@api.exotel.com/v1/Accounts/'.$this->token.'/Sms/send.json';
+    }
 
     /**
      * @param $mobile
@@ -70,12 +71,13 @@ class ExotelSms
     private function request($mobile, $message)
     {
         $this->client = new Client();
+
         return $this->client->post($this->buildUrl(), [
             'form_params' => [
                 'From' => $this->senderId,
                 'To' => $mobile,
                 'Body' => $message,
-            ]
+            ],
         ])->getBody();
     }
 }

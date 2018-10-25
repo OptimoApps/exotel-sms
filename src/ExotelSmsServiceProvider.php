@@ -1,5 +1,8 @@
-<?php namespace Ssatz\ExotelSms;
-/**
+<?php
+
+namespace Ssatz\ExotelSms;
+
+/*
  * *
  *  *  * Copyright (C) Optimo Technologies - All Rights Reserved
  *  *  * Unauthorized copying of this file, via any medium is strictly prohibited
@@ -12,8 +15,7 @@
 use Illuminate\Support\ServiceProvider;
 
 /**
- * Class ExotelSmsServiceProvider
- * @package Satz\ExotelSms
+ * Class ExotelSmsServiceProvider.
  */
 class ExotelSmsServiceProvider extends ServiceProvider
 {
@@ -31,14 +33,9 @@ class ExotelSmsServiceProvider extends ServiceProvider
         $this->app->alias(ExotelSms::class, 'exotel-sms');
     }
 
-    /**
-     *
-     */
     public function boot()
     {
-        $configPath = __DIR__ . '/../config/exotel-sms.php';
+        $configPath = __DIR__.'/../config/exotel-sms.php';
         $this->publishes([$configPath => config_path('exotel-sms.php')]);
     }
-
-
 }
