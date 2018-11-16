@@ -1,9 +1,10 @@
 [![Build Status](https://travis-ci.org/ssatz/exotel-sms.svg?branch=master)](https://travis-ci.org/ssatz/exotel-sms) [![StyleCI](https://github.styleci.io/repos/154660857/shield?branch=master)](https://github.styleci.io/repos/154660857)
+
 This is a Laravel 5 Package for Exotel SMS Gateway Integration. 
 This package supports Laravel 5.5 or Higher
 
 **Install**
-`composer require satz/exotel-sms`
+`composer require ssatz/exotel-sms`
 Now run `php artisan vendor:publish` to publish config/exotel-sms.php file in your config directory.
 
 **Usage**
