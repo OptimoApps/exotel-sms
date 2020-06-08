@@ -8,7 +8,7 @@
  *  *.
  */
 
-namespace Ssatz\ExotelSms\Enum;
+namespace OptimoApps\ExotelSms\Enum;
 
 final class SmsType
 {

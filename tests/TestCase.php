@@ -1,6 +1,6 @@
 <?php
 
-namespace Ssatz\ExotelSms\Test;
+namespace OptimoApps\ExotelSms\Test;
 
 /*
  * *
@@ -11,8 +11,8 @@ namespace Ssatz\ExotelSms\Test;
  *  *
  *
  */
-use Ssatz\ExotelSms\ExotelSmsFacade;
-use Ssatz\ExotelSms\ExotelSmsServiceProvider;
+use OptimoApps\ExotelSms\ExotelSmsFacade;
+use OptimoApps\ExotelSms\ExotelSmsServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 /**
@@ -20,13 +20,6 @@ use Orchestra\Testbench\TestCase as OrchestraTestCase;
  */
 class TestCase extends OrchestraTestCase
 {
-    /**
-     * Setup the test environment.
-     */
-    public function setUp()
-    {
-        parent::setUp();
-    }
 
     /**
      * @param \Illuminate\Foundation\Application $app

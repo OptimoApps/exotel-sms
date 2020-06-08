@@ -1,6 +1,6 @@
 <?php
 
-namespace Ssatz\ExotelSms;
+namespace OptimoApps\ExotelSms;
 
 /*
  * *
@@ -13,9 +13,9 @@ namespace Ssatz\ExotelSms;
  */
 
 use GuzzleHttp\Client;
-use Ssatz\ExotelSms\Enum\SmsType;
-use Ssatz\ExotelSms\Exception\ExotelException;
-use Ssatz\ExotelSms\Exception\ConfigNotDefinedException;
+use OptimoApps\ExotelSms\Enum\SmsType;
+use OptimoApps\ExotelSms\Exception\ExotelException;
+use OptimoApps\ExotelSms\Exception\ConfigNotDefinedException;
 
 /**
  * Class ExotelSms.
@@ -25,7 +25,7 @@ class ExotelSms
     /**
      * @var Client
      */
-    protected $client;
+    protected  $client;
     /**
      * @var
      */
@@ -50,7 +50,7 @@ class ExotelSms
 
     /**
      * Send  Bulk Dynamic Bulk Sms
-     * https://developer.exotel.com/api/#send-bulk-dynamic-sms.
+     * @link https://developer.exotel.com/api/#send-bulk-dynamic-sms.
      * @param array $messages
      */
     public static function sendBulkDynamicSms(array $messages)
@@ -99,7 +99,7 @@ class ExotelSms
                 'Body' => $message,
             ],
         ]);
-        if ($response->getStatusCode() == 200) {
+        if ($response->getStatusCode() === 200) {
             return $response->getBody()->getContents();
         }
         throw new ExotelException($response->getBody(), $response->getStatusCode());
@@ -107,7 +107,7 @@ class ExotelSms
 
     /**
      * Send Bulk SMS
-     * https://developer.exotel.com/api/#send-bulk-dynamic-sms.
+     * @link https://developer.exotel.com/api/#send-bulk-dynamic-sms.
      * @param array $messages
      * @throws ConfigNotDefinedException
      * @throws ExotelException
@@ -121,7 +121,7 @@ class ExotelSms
                 'Messages'=> $messages,
             ],
         ]);
-        if ($response->getStatusCode() == 200) {
+        if ($response->getStatusCode() === 200) {
             return $response->getBody()->getContents();
         }
 

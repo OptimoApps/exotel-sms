@@ -1,6 +1,6 @@
 <?php
 
-namespace Ssatz\ExotelSms;
+namespace OptimoApps\ExotelSms;
 
 /*
  * *

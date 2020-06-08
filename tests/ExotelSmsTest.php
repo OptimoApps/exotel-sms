@@ -1,6 +1,6 @@
 <?php
 
-namespace Ssatz\ExotelSms\Test;
+namespace OptimoApps\ExotelSms\Test;
 
 /*
  * *
@@ -12,9 +12,10 @@ namespace Ssatz\ExotelSms\Test;
  *
  */
 
-use Ssatz\ExotelSms\ExotelSms;
+use OptimoApps\ExotelSms\Exception\ConfigNotDefinedException;
+use OptimoApps\ExotelSms\ExotelSms;
 use Illuminate\Support\Facades\Config;
-use Ssatz\ExotelSms\Exception\ConfigNotDefinedException;
+
 
 class ExotelSmsTest extends TestCase
 {
