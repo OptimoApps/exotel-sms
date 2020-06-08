@@ -1,14 +1,26 @@
-[![Build Status](https://travis-ci.org/ssatz/exotel-sms.svg?branch=master)](https://travis-ci.org/ssatz/exotel-sms) [![StyleCI](https://github.styleci.io/repos/154660857/shield?branch=master)](https://github.styleci.io/repos/154660857)
 
-This is a Laravel 5 Package for Exotel SMS Gateway Integration. 
-This package supports Laravel 5.5 or Higher
+# Exotel  Laravel SMS Gateway
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/optimoapps/exotel-sml.svg?style=flat-square)](https://packagist.org/packages/optimoapps/razorpay-x)
+[![Total Downloads](https://img.shields.io/packagist/dt/optimoapps/exotel-sms.svg?style=flat-square)](https://packagist.org/packages/optimoapps/razorpay-x)
+![run-tests](https://github.com/OptimoApps/exotel-sms/workflows/run-tests/badge.svg)
+![Check & fix styling](https://github.com/OptimoApps/exotel-sms/workflows/Check%20&%20fix%20styling/badge.svg)
+
+This is a Laravel Package for Exotel SMS Gateway Integration. 
+This package supports Laravel 6 or Higher
 
 **Install**
-`composer require optimoapps/exotel-sms`
+``` bash
+composer require optimoapps/exotel-sms
+```
+
 Now run `php artisan vendor:publish` to publish config/exotel-sms.php file in your config directory.
 
 **Usage**
-`ExotelSms::send(9894000000, 'test');`
+
+``` php
+ExotelSms::send(9894000000, 'test');
+```
 
 ### Testing
 
