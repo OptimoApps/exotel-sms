@@ -1,8 +1,8 @@
 
 # Exotel  Laravel SMS Gateway
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/optimoapps/exotel-sml.svg?style=flat-square)](https://packagist.org/packages/optimoapps/razorpay-x)
-[![Total Downloads](https://img.shields.io/packagist/dt/optimoapps/exotel-sms.svg?style=flat-square)](https://packagist.org/packages/optimoapps/razorpay-x)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/optimoapps/exotel-sml.svg?style=flat-square)](https://packagist.org/packages/optimoapps/exotel-sms)
+[![Total Downloads](https://img.shields.io/packagist/dt/optimoapps/exotel-sms.svg?style=flat-square)](https://packagist.org/packages/optimoapps/exotel-sms)
 ![run-tests](https://github.com/OptimoApps/exotel-sms/workflows/run-tests/badge.svg)
 ![Check & fix styling](https://github.com/OptimoApps/exotel-sms/workflows/Check%20&%20fix%20styling/badge.svg)
 
