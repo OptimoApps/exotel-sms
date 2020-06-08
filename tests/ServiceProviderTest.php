@@ -1,6 +1,5 @@
 <?php
 
-
 namespace OptimoApps\ExotelSms\Test;
 
 use Illuminate\Config\Repository;

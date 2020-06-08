@@ -12,10 +12,9 @@ namespace OptimoApps\ExotelSms\Test;
  *
  */
 
+use Illuminate\Support\Facades\Config;
 use OptimoApps\ExotelSms\Exception\ConfigNotDefinedException;
 use OptimoApps\ExotelSms\ExotelSms;
-use Illuminate\Support\Facades\Config;
-
 
 class ExotelSmsTest extends TestCase
 {

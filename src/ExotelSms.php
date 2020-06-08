@@ -14,8 +14,8 @@ namespace OptimoApps\ExotelSms;
 
 use GuzzleHttp\Client;
 use OptimoApps\ExotelSms\Enum\SmsType;
-use OptimoApps\ExotelSms\Exception\ExotelException;
 use OptimoApps\ExotelSms\Exception\ConfigNotDefinedException;
+use OptimoApps\ExotelSms\Exception\ExotelException;
 
 /**
  * Class ExotelSms.
@@ -25,7 +25,7 @@ class ExotelSms
     /**
      * @var Client
      */
-    protected  $client;
+    protected $client;
     /**
      * @var
      */
@@ -39,19 +39,15 @@ class ExotelSms
      */
     protected $senderId;
 
-    /**
-     * @param int $toMobile
-     * @param string $message
-     */
     public static function send(int $toMobile, string $message)
     {
         return (new static())->sms($toMobile, $message);
     }
 
     /**
-     * Send  Bulk Dynamic Bulk Sms
-     * @link https://developer.exotel.com/api/#send-bulk-dynamic-sms.
-     * @param array $messages
+     * Send  Bulk Dynamic Bulk Sms.
+     *
+     * @see https://developer.exotel.com/api/#send-bulk-dynamic-sms.
      */
     public static function sendBulkDynamicSms(array $messages)
     {
@@ -59,10 +55,9 @@ class ExotelSms
     }
 
     /**
-     * @return string
      * @throws ConfigNotDefinedException
      */
-    private function buildUrl(int $smsType):string
+    private function buildUrl(int $smsType): string
     {
         $this->sid = config('exotel-sms.SID');
         $this->token = config('exotel-sms.Token');
@@ -95,20 +90,21 @@ class ExotelSms
         $response = $this->client->post($this->buildUrl(SmsType::SMS), [
             'form_params' => [
                 'From' => $this->senderId,
-                'To' => $mobile,
+                'To'   => $mobile,
                 'Body' => $message,
             ],
         ]);
-        if ($response->getStatusCode() === 200) {
+        if (200 === $response->getStatusCode()) {
             return $response->getBody()->getContents();
         }
         throw new ExotelException($response->getBody(), $response->getStatusCode());
     }
 
     /**
-     * Send Bulk SMS
-     * @link https://developer.exotel.com/api/#send-bulk-dynamic-sms.
-     * @param array $messages
+     * Send Bulk SMS.
+     *
+     * @see https://developer.exotel.com/api/#send-bulk-dynamic-sms.
+     *
      * @throws ConfigNotDefinedException
      * @throws ExotelException
      */
@@ -117,11 +113,11 @@ class ExotelSms
         $this->client = new Client();
         $response = $this->client->post($this->buildUrl(SmsType::BULK_DYNAMIC_SMS), [
             'form_params' => [
-                'From' => $this->senderId,
+                'From'    => $this->senderId,
                 'Messages'=> $messages,
             ],
         ]);
-        if ($response->getStatusCode() === 200) {
+        if (200 === $response->getStatusCode()) {
             return $response->getBody()->getContents();
         }
 

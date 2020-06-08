@@ -20,9 +20,9 @@ use Orchestra\Testbench\TestCase as OrchestraTestCase;
  */
 class TestCase extends OrchestraTestCase
 {
-
     /**
      * @param \Illuminate\Foundation\Application $app
+     *
      * @return array
      */
     protected function getPackageProviders($app)
@@ -32,6 +32,7 @@ class TestCase extends OrchestraTestCase
 
     /**
      * @param \Illuminate\Foundation\Application $app
+     *
      * @return array
      */
     protected function getPackageAliases($app)

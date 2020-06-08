@@ -8,7 +8,7 @@
  *  *.
  */
 return [
-    'SID' => '',
-    'Token' => '',
+    'SID'      => '',
+    'Token'    => '',
     'SenderId' => '',
 ];
